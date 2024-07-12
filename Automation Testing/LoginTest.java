@@ -28,8 +28,8 @@ public class LoginTest
 
     @When("the user enters username {string} and password {string}")
     public void the_user_enters_username_and_password(String username, String password) {
-        WebElement usernameField = driver.findElement(By.id("prphalke180601@gmail.com"));
-        WebElement passwordField = driver.findElement(By.id("Pratik@09"));
+        WebElement usernameField = driver.findElement(By.id("username"));
+        WebElement passwordField = driver.findElement(By.id("password"));
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
     }
